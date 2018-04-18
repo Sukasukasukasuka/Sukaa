@@ -1,0 +1,46 @@
+page-login {
+
+}
+h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 34px;
+  text-align: center;
+  color: #A6A6A6;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.logo{
+  margin-top: 41pt;
+}
+.btn {
+  margin: 25pt 0 0 7pt;
+}
+.wrapp{
+  margin-top: 80pt;
+}
+.input_inline{
+  display: flex;
+  flex-direction: row;
+}
+.radio_inline{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20pt;
+}
+.list-md .item-input:last-child{
+  border: none;
+}
+
+.logo{
+  margin: 0 auto;
+}

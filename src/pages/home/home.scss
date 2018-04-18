@@ -1,0 +1,89 @@
+page-home {
+ text-align: center;
+}
+.main_screen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16pt;
+}
+
+h4{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16pt;
+}
+.under_text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  font-size: 12pt;
+}
+.activity_bg{
+  background: #339661;
+}
+.activity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.activity p{
+  color: #fff;
+}
+.activity_act{
+  font-weight: 100;
+}
+ion-app.md [padding] .scroll-content{
+  padding: 0;
+}
+.label_activity{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 16pt;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 0;
+}
+ion-content h3{
+  margin-top: 5pt;
+  font-weight: 600;
+}
+.grapth{
+  margin: 0 auto;
+  height: 250pt;
+  background: #2F8EFF;
+}
+ion-content h2{
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #2F8EFF;
+}
+.another_activities_p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+
