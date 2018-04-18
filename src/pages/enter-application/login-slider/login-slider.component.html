@@ -1,0 +1,13 @@
+<ion-header>
+
+</ion-header>
+<ion-content>
+  <ion-slides>
+    <ion-slide>
+      <page-login (submitEvent)='goToPage($event)'></page-login>
+    </ion-slide>
+    <ion-slide>
+      <page-activitylist (goToHome)='navigateToHomePage()'></page-activitylist>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

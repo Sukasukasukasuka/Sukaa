@@ -5,26 +5,24 @@ import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {ActivitylistPage} from "../pages/activitylist/activitylist";
+import { EnterApplicationModule } from '../pages/enter-application/enter-application.module';
+import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
-    HomePage,
     TabsPage,
-    LoginPage,
-    ActivitylistPage
+    HomePage
   ],
   imports: [
     BrowserModule,
+    EnterApplicationModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -32,10 +30,8 @@ import {ActivitylistPage} from "../pages/activitylist/activitylist";
     MyApp,
     AboutPage,
     ContactPage,
-    HomePage,
     TabsPage,
-    LoginPage,
-    ActivitylistPage
+    HomePage
   ],
   providers: [
     StatusBar,

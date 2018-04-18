@@ -1,0 +1,52 @@
+<ion-content padding>
+
+  <ion-grid class="wrapp">
+    <img class="logo" src="../../assets/logo.png" />
+    <h1>Welcome</h1>
+    <p>Please fill the form to start</p>
+    <ion-row>
+      <ion-col>
+        <form [formGroup]="formGroup" *ngIf="loading">
+          <ion-list>
+            <ion-item>
+              <ion-label floating>Name</ion-label>
+              <ion-input [(ngModel)]="login.name" formControlName="name" name='name' type="text"></ion-input>
+              <!-- <div *ngIf="formGroup.controls.name.errors && formGroup.controls.name.errors.required">
+                  Name must be at least 4 characters long.
+                </div> -->
+            </ion-item>
+
+            <div class="input_inline">
+              <ion-item>
+                <ion-label floating>Weigth (kg)</ion-label>
+                <ion-input [(ngModel)]="login.weight" formControlName="weight" name='weight' type="number"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Heigth (cm)</ion-label>
+                <ion-input  [(ngModel)]="login.height" formControlName="height" name='height' type="number"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label floating>Age</ion-label>
+                <ion-input [(ngModel)]="login.age" formControlName="age" name='age' type="number"></ion-input>
+              </ion-item>
+            </div>
+          </ion-list>
+          <ion-list radio-group="Gender" [(ngModel)]="login.gender" formControlName="gender" name='gender' >
+            <div class="radio_inline">
+              <ion-item class="radio">
+                <ion-label>Male</ion-label>
+                <ion-radio value="m"></ion-radio>
+              </ion-item>
+              <ion-item class="radio">
+                <ion-label>Femail</ion-label>
+                <ion-radio value="f"></ion-radio>
+              </ion-item>
+            </div>
+            <button [disabled]="formGroup.invalid" class="btn" ion-button full color="secondary" (click)="submit()">Next</button>
+          </ion-list>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
